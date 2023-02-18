@@ -15,4 +15,15 @@
 #3003
 user_input = input()
 numbers = [int(num) for num in user_input.split()]
-print(numbers)
+
+piece = [1, 1, 2, 2, 2, 8]
+n = len(piece)
+modifing_piece = [0] * n
+
+for i in range(6):
+    if numbers[i] == piece[i]:
+        modifing_piece[i] = 0
+    else:
+        modifing_piece[i] = piece[i] - numbers[i]
+
+print(' '.join(str(s) for s in modifing_piece))
