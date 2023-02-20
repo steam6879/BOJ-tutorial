@@ -36,7 +36,7 @@
 # for i in range(len(a)):
 #     print(chess[i] - a[i], end=' ')
 
-# #2588 - 나머지를 구하는 %을 이용하여 값을 바로 출력하는 방법
+# #2588 - 나머지를 구하는 %을 이용하여 값을 바로 출력하는 방법    Fail
 # num1 = int(input())
 # num2 = int(input())
 #
@@ -45,7 +45,7 @@
 # print(num1 * (num2//100))
 # print(num1 * num2)
 
-#2588 - 결과값을 list 변수에 담고, 출력하는 방법
+#2588 - 결과값을 list 변수에 담고, 출력하는 방법   Fail
 num1 = int(input())
 num2 = list(map(int, input()))
 
