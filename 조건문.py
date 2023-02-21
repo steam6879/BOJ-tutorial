@@ -17,18 +17,30 @@
 #     print(3)
 # else: print(4)
 
-#2884
-(hour, min) = tuple(map(int, input().split()))
+# #2884
+# (hour, min) = tuple(map(int, input().split()))
+#
+# if hour != 0:
+#     if min < 45:
+#         (hour, min) = (hour - 1, 15 + min)
+#     else:
+#         (hour, min) = (hour, min - 45)
+# else:
+#     if min < 45:
+#         (hour, min) = (23, 15 + min)
+#     else:
+#         (hour, min) = (hour, min - 45)
+#
+# print(hour, min)
 
-if hour != 0:
-    if min < 45:
-        (hour, min) = (hour - 1, 15 + min)
-    else:
-        (hour, min) = (hour, min - 45)
+#2525
+hour, min = map(int, input().split())
+timer = int(input())
+
+if (min + timer) < 60:
+    print(hour, min + timer)
 else:
-    if min < 45:
-        (hour, min) = (23, 15 + min)
+    if (hour + (min + timer) // 60) >= 24:
+        print((hour + (min + timer) // 60) - 24, (min + timer) % 60)
     else:
-        (hour, min) = (hour, min - 45)
-
-print(hour, min)
+        print((hour + (min + timer) // 60), (min + timer) % 60)
