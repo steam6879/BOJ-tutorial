@@ -33,14 +33,30 @@
 #
 # print(hour, min)
 
-#2525
-hour, min = map(int, input().split())
-timer = int(input())
+# #2525
+# hour, min = map(int, input().split())
+# timer = int(input())
+#
+# if (min + timer) < 60:
+#     print(hour, min + timer)
+# else:
+#     if (hour + (min + timer) // 60) >= 24:
+#         print((hour + (min + timer) // 60) - 24, (min + timer) % 60)
+#     else:
+#         print((hour + (min + timer) // 60), (min + timer) % 60)
 
-if (min + timer) < 60:
-    print(hour, min + timer)
+#2480 - fail
+a, b, c = map(int, input().split())
+
+if a == b and b == c:
+    print(10000 + a * 1000)
+
+elif a == c or a == b:
+    print(1000 + a * 100)
+
+elif b == c:
+    print(1000 + b * 100)
+
 else:
-    if (hour + (min + timer) // 60) >= 24:
-        print((hour + (min + timer) // 60) - 24, (min + timer) % 60)
-    else:
-        print((hour + (min + timer) // 60), (min + timer) % 60)
+    print(max(a, b, c) * 100)
+
