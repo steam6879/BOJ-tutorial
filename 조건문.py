@@ -45,18 +45,31 @@
 #     else:
 #         print((hour + (min + timer) // 60), (min + timer) % 60)
 
-#2480 - fail
-a, b, c = map(int, input().split())
+# #2480 - fail
+# a, b, c = map(int, input().split())
+#
+# if a == b and b == c:
+#     print(10000 + a * 1000)
+#
+# elif a == c or a == b:
+#     print(1000 + a * 100)
+#
+# elif b == c:
+#     print(1000 + b * 100)
+#
+# else:
+#     print(max(a, b, c) * 100)
 
-if a == b and b == c:
-    print(10000 + a * 1000)
+#25304
+total = int(input())
+n = int(input())
+total_price = 0
 
-elif a == c or a == b:
-    print(1000 + a * 100)
+for i in range(n):
+    price, num = map(int, input().split())
+    total_price += price * num
 
-elif b == c:
-    print(1000 + b * 100)
-
+if total == total_price:
+    print("Yes")
 else:
-    print(max(a, b, c) * 100)
-
+    print("No")
