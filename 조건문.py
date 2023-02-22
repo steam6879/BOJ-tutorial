@@ -60,16 +60,34 @@
 # else:
 #     print(max(a, b, c) * 100)
 
-#25304
-total = int(input())
-n = int(input())
-total_price = 0
+# #25304
+# total = int(input())
+# n = int(input())
+# total_price = 0
+#
+# for i in range(n):
+#     price, num = map(int, input().split())
+#     total_price += price * num
+#
+# if total == total_price:
+#     print("Yes")
+# else:
+#     print("No")
 
-for i in range(n):
-    price, num = map(int, input().split())
-    total_price += price * num
+# #15552
+# import sys
+#
+# input = sys.stdin.readline
+#
+# n = int(input())
+# sum = [0] * n
+#
+# for i in range(n):
+#     a, b = map(int, input().split())
+#     sum[i] = a + b
+#
+# for i in range(n):
+#     print(sum[i])
 
-if total == total_price:
-    print("Yes")
-else:
-    print("No")
+
+
