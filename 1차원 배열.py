@@ -17,13 +17,19 @@
 # print(max(a))
 # print(a.index(max(a)) + 1)
 
-# 10810
-basket_num, n = map(int, input().split())
-basket = [0] * basket_num
+# # 10810
+# basket_num, n = map(int, input().split())
+# basket = [0] * basket_num
+#
+# for i in range(n):
+#     start_num, end_num, key = map(int, input().split())
+#     for j in range(start_num - 1, end_num):
+#         basket[j] = key
+#
+# print(' '.join(map(str, basket)))
 
-for i in range(n):
-    start_num, end_num, key = map(int, input().split())
-    for j in range(start_num - 1, end_num):
-        basket[j] = key
+# 10818
+n = int(input())
+a = list(map(int, input().split()))
 
-print(' '.join(map(str, basket)))
+print(min(a), max(a))
